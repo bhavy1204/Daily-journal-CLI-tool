@@ -1,0 +1,1 @@
+This is my first CLI tool made using node js. It aims to achive the CLI based journal. 
