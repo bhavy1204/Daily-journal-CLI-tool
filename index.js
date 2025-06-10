@@ -1,10 +1,11 @@
-#!/usr/bin/env node
+// #!/usr/bin/env node
 
 import inquirer from 'inquirer';
-import { validate } from 'uuid';
 
 //utility functions 
-function wait(){}
+function wait() {
+    return new Promise(r => setTimeout(r, 2000));
+}
 
 //main menu
 const menu = async () => {
@@ -21,10 +22,11 @@ const menu = async () => {
                 "3. Exit"
             ]
         }])
-if(res.choice==="3. Exit"){
-       console.log("exiting");
-       return;
-}
+        if (res.choice === "3. Exit") {
+            console.log("exiting");
+            await wait();
+            return;
+        }
     }
 }
 
