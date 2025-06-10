@@ -3,6 +3,9 @@
 import inquirer from 'inquirer';
 import { validate } from 'uuid';
 
+//utility functions 
+function wait(){}
+
 //main menu
 const menu = async () => {
 
@@ -19,7 +22,7 @@ const menu = async () => {
             ]
         }])
 if(res.choice==="3. Exit"){
-
+       console.log("exiting");
        return;
 }
     }
