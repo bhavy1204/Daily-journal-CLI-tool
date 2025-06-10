@@ -3,6 +3,7 @@
 import inquirer from 'inquirer';
 import { validate } from 'uuid';
 
+//main menu
 const menu = async () => {
 
     let exit = false;
@@ -17,6 +18,10 @@ const menu = async () => {
                 "3. Exit"
             ]
         }])
+if(res.choice==="3. Exit"){
+
+       return;
+}
     }
 }
 
